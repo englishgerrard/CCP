@@ -8,3 +8,5 @@ library('geodata')  # Data downloader
 library('sp')        # Older vector GIS package - replaced by sf in most cases
 library('rgdal')     # Interface to the Geospatial Data Abstraction Library
 library('lwgeom')    # Lightweight geometry engine
+
+library(lme4)

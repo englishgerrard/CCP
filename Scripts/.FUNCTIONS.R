@@ -18,7 +18,7 @@ sample_VI <- function(raster.path = './Data/VI/M3M_Merged_NDVI.tif',
   # the M3M canopy hieght model
   chm <- rast('./Data/CHM/M3M_Merged_CHM.tif')
   # site NDVI
-  VI <-rast(raster.path)
+  VI <- rast(raster.path)
   # sample 
   VI_aligned <- resample(VI, chm, method = "bilinear")
   # Create a mask where CHM values are greater than 0.5
